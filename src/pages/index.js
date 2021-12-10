@@ -1,12 +1,15 @@
 import * as React from "react"
-
+import logo from "../images/pixelbitshot.png"
+import "../styles/global.css"
 // styles
 const pageStyles = {
-  color: "#232129",
-  padding: 96,
+  
+  background: "#000000",
+  padding: 26,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const headingStyles = {
+
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 320,
@@ -131,8 +134,8 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Pixel Bigshot</title>
       <h1 style={headingStyles}>
-       Pixel Bigshot
-        <br />
+       
+        <img src={logo} alt="title" width="100%" height="100%"></img>
         <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
         </span>
