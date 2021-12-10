@@ -3,3 +3,7 @@ html, body {
     margin: 0;
     background: black;
   }
+
+  .textCenter{
+      text-align: center;
+  }
