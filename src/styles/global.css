@@ -1,9 +1,15 @@
+@font-face {
+  font-family: PressStart;
+  src: url(../fonts/PressStart2P-Regular.ttf);
+}
 html, body {
     height: 100%;
     margin: 0;
     background: black;
+    font-family: PressStart;
   }
+.globalFont{
+  font-family: PressStart;
+}
 
-  .textCenter{
-      text-align: center;
-  }
+ 

@@ -1,0 +1,26 @@
+
+
+.textCenter {
+  text-align: center;
+}
+.fontPixel{
+  font-family: "PressStart";
+  line-height: 160%;
+  font-weight: 100;
+  font-size: .75rem;;
+
+ }
+ .mintButton {
+  
+  padding: 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: green;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "PressStart";
+}
+.specialEdit{
+  font-size: 0.55rem;
+  color:green;
+}
