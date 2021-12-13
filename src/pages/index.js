@@ -65,7 +65,6 @@ const IndexPage = () => {
         <button className={styles.mintButton} onClick={mint}>Confirm</button>
       </div>
 
-
     </main>
   )
 }
