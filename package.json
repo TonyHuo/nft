@@ -15,16 +15,22 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "bignumber.js": "^9.0.2",
+    "ethers": "^5.5.2",
+    "ethjs": "^0.4.0",
     "gatsby": "^4.3.0",
     "gatsby-plugin-image": "^2.3.0",
     "gatsby-plugin-manifest": "^4.3.0",
     "gatsby-plugin-sharp": "^4.3.0",
     "gatsby-source-filesystem": "^4.3.0",
     "gatsby-transformer-sharp": "^4.3.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.1.1",
+    "web3": "^1.6.1"
   },
   "devDependencies": {
-    "gatsby-plugin-favicons": "^2.0.0"
+    "gatsby-plugin-favicons": "^2.0.0",
+    "web-vitals": "^2.1.2"
   }
 }

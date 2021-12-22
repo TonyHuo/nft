@@ -7,7 +7,7 @@
   font-family: "PressStart";
   line-height: 160%;
   font-weight: 100;
-  font-size: .75rem;;
+  font-size: 1.0rem;;
 
  }
  .mintButton {
@@ -20,7 +20,49 @@
   font-size: 1rem;
   font-family: "PressStart";
 }
+.claimButton {
+  
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: -5px;
+  background-color: green;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "PressStart";
+}
 .specialEdit{
-  font-size: 0.55rem;
+  font-size: 0.75rem;
   color:green;
+}
+.addr{
+  position: absolute;
+  right: 10px;
+  top:5px;
+  padding: 2px;
+  border-radius: 5px;
+  
+  
+  border: 1px solid green;
+}
+.twitter{
+  position: absolute;
+  right: 150px;
+  top:15px;
+}
+.parent {
+  display: flex;
+  flex-direction:row;
+}
+
+.column {
+  padding-left: 15px;
+  border: 1px solid black;
+  
+}
+.addrOver{
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  width: 100px; 
+  overflow: hidden;
 }
