@@ -32,7 +32,7 @@ class App extends Component {
       super(props)
   
       // Set initial state
-      this.state = {claimNum:0,mintNum:0,value:false,account:'Connect',balance:1,status:'',address:''}
+      this.state = {claimNum:0,minted:0,mintNum:0,value:false,account:'Connect',balance:1,status:'',address:''}
         
       this.connectWallet = this.connectWallet.bind(this)
       this.mintNFT = this.mintNFT.bind(this)
@@ -91,6 +91,11 @@ class App extends Component {
             this.setState({claimNum:parseInt(result, 16)})
         
           }.bind(this))
+          await nftContract.totalSupply().then(function(result){
+          
+            this.setState({minted:parseInt(result, 16)})
+         
+         }.bind(this))
 
           console.log("mint success")
   
@@ -133,6 +138,11 @@ class App extends Component {
             this.setState({claimNum:parseInt(result, 16)})
          
          }.bind(this))
+         await nftContract.totalSupply().then(function(result){
+          
+          this.setState({minted:parseInt(result, 16)})
+       
+       }.bind(this))
   
         } else {
           console.log("Ethereum object does not exist");
@@ -173,6 +183,12 @@ class App extends Component {
              this.setState({claimNum:parseInt(result, 16)})
           
           }.bind(this))
+          console.log("check minted")
+          await nftContract.totalSupply().then(function(result){
+            console.log(parseInt(result, 16))
+            this.setState({minted:parseInt(result, 16)})
+         
+         }.bind(this))
           
         } else {
           console.log("Ethereum object does not exist");
@@ -213,12 +229,12 @@ class App extends Component {
             <div className={styles.fontPixel} style={contentStyles}>
                 100 Pixel Bigshot (PBS) in the world. Can you recognize them? 
               <p className={styles.specialEdit}>
-                * Special edition: We have 5% of NFTs with a zombie-colour skin. If you mint that, let us know and you will be granted a chance to mint another one for free. 
+                * Special edition: We have 10% of NFTs with a zombie-colour skin. If you mint that, let us know and you will be granted a chance to mint another one for free. 
               </p>
                1 PBS cost 50 Matic
             </div>
             <div style={contentStyles}> 
-              Amount: <input type="number" onChange={this.updateInput}></input> 
+      Amount: <input type="number" onChange={this.updateInput}></input> <span>{this.state.minted}/110</span>
             </div>
             <div className={styles.textCenter} style={contentStyles}> 
               <button className={styles.mintButton} onClick={this.mintNFT} disabled={!this.state.mintNum>0}>Mint</button>
