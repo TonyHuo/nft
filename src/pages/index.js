@@ -11,17 +11,17 @@ class IndexPage extends Component {
         <main>
             <div className="application">
                 <Helmet>
-                <meta charSet="utf-8" />
-                <title>Pixel Bigshot</title>
-                <meta property="og:title" content="Pixel Bigshot" />
-                <meta property="og:type" content="100 Pixel Bigshot (PBS) in the world." />
-                <meta property="og:url" content="https://pixelbigshot.com" />
-                <meta property="og:image" content={about} />
-                <meta property="og:description" content="100 Pixel Bigshot (PBS) in the world."/>
-                <meta property="og:site_name" content="Pixel Bigshot"/>   
-                <meta name="twitter:card" content="summary_large_image"/>
-                <meta name="twitter:site" content="@pixelbigshot"/>
-                <meta name="twitter:creator" content="@pixelbigshot"/>
+                    <meta charSet="utf-8" />
+                    <title>Pixel Bigshot</title>
+                    <meta property="og:title" content="Pixel Bigshot" />
+                    <meta property="og:type" content="100 Pixel Bigshot (PBS) in the world."/>
+                    <meta property="og:url" content="https://pixelbigshot.com"/>
+                    <meta property="og:image" content="https://imgur.com/a/SFuC6En"/>
+                    <meta property="og:description" content="100 Pixel Bigshot (PBS) in the world."/>
+                    <meta property="og:site_name" content="Pixel Bigshot"/>   
+                    <meta name="twitter:card" content="summary_large_image"/>
+                    <meta name="twitter:site" content="@pixelbigshot"/>
+                    <meta name="twitter:creator" content="@pixelbigshot"/>
                 </Helmet>
             </div>
             <div>
